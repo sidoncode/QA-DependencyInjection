@@ -3,7 +3,7 @@ package com.SpringBoot.DependencyInjection;
 public class ToyotaEngine implements IEngine{
 
     String company;
-    double cost;
+    double cost = 12d;
 
     public String getCompany() {
         return company;
@@ -33,6 +33,6 @@ public class ToyotaEngine implements IEngine{
 
     @Override
     public String toString(){
-        return "this is engine object from" + company;
+        return "this is engine object from" + company + cost;
     }
 }
