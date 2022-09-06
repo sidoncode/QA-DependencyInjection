@@ -41,11 +41,11 @@ public class Vehicle {
         ApplicationContext rootctx = new ClassPathXmlApplicationContext("beans.xml");
 
         // instantiating the obj1 via constuctor DI
-        Vehicle obj1 = (Vehicle) rootctx.getBean("InjectwithConstructor");
+        Vehicle obj1 = (Vehicle) rootctx.getBean("Constructor");
 
 
         // instantiating the obj1 via constuctor DI
-        Vehicle obj2 = (Vehicle) rootctx.getBean("InjectwithSetter");
+        Vehicle obj2 = (Vehicle) rootctx.getBean("Setter");
 
         System.out.println(obj1);
         System.out.println(obj2);

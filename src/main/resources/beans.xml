@@ -38,14 +38,18 @@
     </bean>
 
 
-    <bean id="InjectwithConstructor" class="com.SpringBoot.DependencyInjection.Vehicle">
-        <constructor-arg name="engine" ref = "ToyotaBean">
+    <bean id="Constructor" class="com.SpringBoot.DependencyInjection.Vehicle">
+        <constructor-arg name="iEngine" ref = "ToyotaBean">
+        </constructor-arg>
+        <constructor-arg name="tyres" ref = "tyre1Bean">
         </constructor-arg>
     </bean>
 
 
-    <bean id="InjectwithSetter" class="com.SpringBoot.DependencyInjection.Vehicle">
-        <constructor-arg name="engine" ref = "Tyre2Bean">
+    <bean id="Setter" class="com.SpringBoot.DependencyInjection.Vehicle">
+        <constructor-arg name="tyres" ref = "tyre2Bean">
+        </constructor-arg>
+        <constructor-arg name="iEngine" ref = "ToyotaBean">
         </constructor-arg>
     </bean>
 
